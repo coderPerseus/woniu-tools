@@ -286,7 +286,7 @@ See `docs/CONFIG-GUIDE.md` for detailed configuration instructions.
 The project supports Chinese (zh) and English (en) using next-intl:
 
 - **Routing**: `src/i18n/routing.ts` - Locale configuration
-- **Middleware**: `src/middleware.ts` - Automatic language detection based on browser preferences
+- **Proxy**: `src/proxy.ts` - Automatic language detection based on browser preferences (Next.js 16 proxy)
 - **Translations**: `messages/zh.json` and `messages/en.json`
 - **Language Switcher**: `src/components/language-switcher.tsx` - UI component for language switching
 
@@ -355,7 +355,7 @@ woniu-tools/
 │   ├── i18n/                        # Internationalization
 │   │   ├── routing.ts
 │   │   └── request.ts
-│   └── middleware.ts                # Locale detection
+│   └── proxy.ts                     # Locale detection (Next.js 16 proxy)
 ├── messages/                        # Translation files
 │   ├── zh.json                     # Chinese translations
 │   └── en.json                     # English translations
