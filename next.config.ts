@@ -1,9 +1,12 @@
 import type { NextConfig } from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
 
 import './src/lib/env/client';
 import './src/lib/env/server';
 
 import { redirects } from './redirects';
+
+const withNextIntl = createNextIntlPlugin('./src/i18n/request.ts');
 
 /**
  * CSPs that we're not adding (as it can change from project to project):
@@ -69,4 +72,4 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
 };
 
-export default nextConfig;
+export default withNextIntl(nextConfig);

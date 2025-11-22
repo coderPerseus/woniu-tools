@@ -1,0 +1,112 @@
+{
+  "site": {
+    "name": "Woniu Toolbox",
+    "title": "Woniu Toolbox - Free Online Tools Collection",
+    "description": "Woniu Toolbox provides image processing, AI tools, developer tools, entertainment tools and other free online tools, including image compression, format conversion, JSON formatting, Base64 encoding/decoding, regex testing and other practical tools to improve your work efficiency."
+  },
+  "nav": {
+    "home": "Home",
+    "toggleTheme": "Toggle Theme",
+    "toggleLanguage": "Toggle Language"
+  },
+  "hero": {
+    "title": "One-Stop Development & Efficiency Toolbox",
+    "subtitle": "Curated collection of developer tools, AI assistants, and creative widgets to boost your productivity.",
+    "searchPlaceholder": "Search tools by name or feature...",
+    "noResults": "No matches found",
+    "external": "External link"
+  },
+  "categories": {
+    "image-tools": {
+      "name": "Image Tools",
+      "description": "Image compression, format conversion, background removal and other image processing tools"
+    },
+    "ai-tools": {
+      "name": "AI Tools",
+      "description": "AI prompt generator, article polishing and other AI-assisted tools"
+    },
+    "dev-tools": {
+      "name": "Developer Tools",
+      "description": "JSON formatter, Base64 encode/decode, regex tester and other development tools"
+    },
+    "fun-tools": {
+      "name": "Entertainment Tools",
+      "description": "Decision wheel, electronic wooden fish and other fun tools"
+    },
+    "other-tools": {
+      "name": "Other Tools",
+      "description": "Currency exchange and other practical tools"
+    }
+  },
+  "tools": {
+    "image-compress": {
+      "name": "Image Compression",
+      "desc": "Lossless compression for PNG/JPG images, supports batch processing."
+    },
+    "format-converter": {
+      "name": "Format Converter",
+      "desc": "Quickly convert WebP to JPG or PNG format."
+    },
+    "bg-remover": {
+      "name": "Background Remover",
+      "desc": "AI automatically identifies subjects and removes backgrounds."
+    },
+    "chrome-icon-generator": {
+      "name": "Chrome Icon Generator",
+      "desc": "Generate full-size PNG set, dark-mode variants, and toolbar SVG in one click."
+    },
+    "chatGPT": {
+      "name": "ChatGPT",
+      "desc": "OpenAI's conversational and coding assistant."
+    },
+    "Gemini": {
+      "name": "Gemini",
+      "desc": "Google's AI chat and code companion."
+    },
+    "claude": {
+      "name": "Claude",
+      "desc": "Anthropic assistant with strong reasoning and coding."
+    },
+    "qwen": {
+      "name": "Qwen",
+      "desc": "Alibaba Tongyi Qianwen large-model assistant."
+    },
+    "deepseek": {
+      "name": "DeepSeek",
+      "desc": "DeepSeek chat for code and reasoning tasks."
+    },
+    "kimi": {
+      "name": "Kimi",
+      "desc": "Moonshot AI long-context assistant."
+    },
+    "minimax": {
+      "name": "MiniMax",
+      "desc": "MiniMax ABAB/chat multimodal assistant."
+    },
+    "vscode": {
+      "name": "VS Code Web",
+      "desc": "Run Visual Studio Code directly in your browser."
+    },
+    "claudeCode": {
+      "name": "Claude Code",
+      "desc": "Claude's code-focused mode for fast edits and refactors."
+    },
+    "codex": {
+      "name": "OpenAI Coding CLI",
+      "desc": "Official Code Agent command line tool of openAI"
+    },
+    "jsdate": {
+      "name": "JS Date WTF",
+      "desc": "Interactive playground for JavaScript Date quirks."
+    },
+    "freeCodeCamp": {
+      "name": "freeCodeCamp",
+      "desc": "Free coding curriculum with projects and certificates."
+    }
+  },
+  "footer": {
+    "copyright": "© {year} All rights reserved.",
+    "poweredBy": "By {author}",
+    "github": "GitHub"
+  }
+}
