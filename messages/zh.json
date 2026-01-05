@@ -55,6 +55,10 @@
       "name": "Chrome 图标生成器",
       "desc": "一键生成全尺寸 PNG、深色模式反色和 toolbar SVG。"
     },
+    "keyboard-logger": {
+      "name": "键盘监听器",
+      "desc": "实时监听按键与组合键，显示系统对应的快捷键标识。"
+    },
     "chatGPT": {
       "name": "ChatGPT",
       "desc": "OpenAI 出品的对话与代码助手。"

@@ -55,6 +55,10 @@
       "name": "Chrome Icon Generator",
       "desc": "Generate full-size PNG set, dark-mode variants, and toolbar SVG in one click."
     },
+    "keyboard-logger": {
+      "name": "Keyboard Logger",
+      "desc": "Listen to keystrokes and show real-time key combos with system-aware labels."
+    },
     "chatGPT": {
       "name": "ChatGPT",
       "desc": "OpenAI's conversational and coding assistant."
