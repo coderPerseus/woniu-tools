@@ -6,6 +6,7 @@ import { JSX } from 'react';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteNav } from '@/components/site-nav';
 import { ChromeIconGenerator } from '@/components/tools/chrome-icon-generator';
+import { KeyboardLogger } from '@/components/tools/keyboard-logger';
 import { categoryIds } from '@/constants/tools';
 import { Link } from '@/i18n/routing';
 
@@ -26,6 +27,11 @@ const toolRegistry: Record<string, ToolEntry> = {
     titleKey: 'tools.chrome-icon-generator.name',
     descriptionKey: 'tools.chrome-icon-generator.desc',
     Component: ChromeIconGenerator,
+  },
+  'keyboard-logger': {
+    titleKey: 'tools.keyboard-logger.name',
+    descriptionKey: 'tools.keyboard-logger.desc',
+    Component: KeyboardLogger,
   },
 };
 
