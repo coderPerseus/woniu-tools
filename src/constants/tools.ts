@@ -21,7 +21,7 @@ export const categoryIcons: Record<CategoryId, keyof typeof iconMap> = {
 };
 
 export const toolKeys = {
-  'image-tools': ['image-compress', 'format-converter', 'bg-remover', 'chrome-icon-generator'],
+  'image-tools': ['image-compress', 'format-converter', 'bg-remover', 'image-watermark', 'chrome-icon-generator'],
   'ai-tools': ['chatGPT', 'Gemini', 'claude', 'qwen', 'deepseek', 'kimi', 'minimax'],
   'dev-tools': ['vscode', 'claudeCode', 'codex', 'keyboard-logger'],
   'fun-tools': ['jsdate'],

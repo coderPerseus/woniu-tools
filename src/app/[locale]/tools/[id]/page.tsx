@@ -6,6 +6,7 @@ import { JSX } from 'react';
 import { SiteFooter } from '@/components/site-footer';
 import { SiteNav } from '@/components/site-nav';
 import { ChromeIconGenerator } from '@/components/tools/chrome-icon-generator';
+import { ImageWatermark } from '@/components/tools/image-watermark';
 import { KeyboardLogger } from '@/components/tools/keyboard-logger';
 import { categoryIds } from '@/constants/tools';
 import { Link } from '@/i18n/routing';
@@ -27,6 +28,11 @@ const toolRegistry: Record<string, ToolEntry> = {
     titleKey: 'tools.chrome-icon-generator.name',
     descriptionKey: 'tools.chrome-icon-generator.desc',
     Component: ChromeIconGenerator,
+  },
+  'image-watermark': {
+    titleKey: 'tools.image-watermark.name',
+    descriptionKey: 'tools.image-watermark.desc',
+    Component: ImageWatermark,
   },
   'keyboard-logger': {
     titleKey: 'tools.keyboard-logger.name',
@@ -89,6 +95,18 @@ export default async function ToolPage({ params }: PageProps) {
     notFound();
   }
 
+  type SeoFaqItem = { q: string; a: string };
+  const isSeoFaqItem = (value: unknown): value is SeoFaqItem => {
+    if (!value || typeof value !== 'object') return false;
+    const item = value as { q?: unknown; a?: unknown };
+    return typeof item.q === 'string' && typeof item.a === 'string';
+  };
+
+  const rawFeatures = id === 'image-watermark' ? t.raw('tools.image-watermark.seo.features') : [];
+  const rawFaq = id === 'image-watermark' ? t.raw('tools.image-watermark.seo.faq') : [];
+  const seoFeatures = Array.isArray(rawFeatures) ? rawFeatures.filter((item): item is string => typeof item === 'string') : [];
+  const seoFaq = Array.isArray(rawFaq) ? rawFaq.filter(isSeoFaqItem) : [];
+
   const { Component, titleKey, descriptionKey } = tool;
 
   return (
@@ -109,6 +127,40 @@ export default async function ToolPage({ params }: PageProps) {
         </div>
 
         <Component />
+
+        {id === 'image-watermark' ? (
+          <section className="space-y-8">
+            <div className="space-y-3">
+              <h2 className="text-2xl font-semibold tracking-tight">{t('tools.image-watermark.seo.title')}</h2>
+              <p className="max-w-3xl text-base text-muted-foreground">{t('tools.image-watermark.seo.summary')}</p>
+            </div>
+
+            <div className="grid gap-6 lg:grid-cols-2">
+              <div className="space-y-3">
+                <h3 className="text-lg font-semibold">{t('tools.image-watermark.seo.featuresTitle')}</h3>
+                <ul className="space-y-2 text-sm text-muted-foreground">
+                  {seoFeatures.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span className="mt-1.5 h-1.5 w-1.5 rounded-full bg-primary/70" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="space-y-3">
+                <h3 className="text-lg font-semibold">{t('tools.image-watermark.seo.faqTitle')}</h3>
+                <div className="space-y-4 text-sm text-muted-foreground">
+                  {seoFaq.map((item) => (
+                    <div key={item.q} className="space-y-1">
+                      <p className="font-medium text-foreground">{item.q}</p>
+                      <p>{item.a}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </section>
+        ) : null}
       </main>
 
       <SiteFooter t={t} />

@@ -51,6 +51,62 @@
       "name": "Background Remover",
       "desc": "AI automatically identifies subjects and removes backgrounds."
     },
+    "image-watermark": {
+      "name": "Online Image Watermark Tool",
+      "desc": "Free local image watermark tool. Batch add text or logo watermarks and export all images as a ZIP.",
+      "seo": {
+        "title": "Free Online Image Watermark Tool with Batch Export",
+        "summary": "Add text or logo watermarks locally in your browser. Batch edit multiple images and download them together as a ZIP for better privacy.",
+        "featuresTitle": "Key Features",
+        "faqTitle": "FAQ",
+        "features": [
+          "Batch watermark multiple images with a single setup",
+          "Text and image/logo watermark support",
+          "Drag to position, resize, rotate, and adjust opacity or radius",
+          "Local processing keeps your images private",
+          "Free to use with instant export"
+        ],
+        "faq": [
+          {
+            "q": "Can I watermark multiple images at once?",
+            "a": "Yes. Upload multiple images, configure the watermark once, and export them together."
+          },
+          {
+            "q": "Does it support text and logo watermarks?",
+            "a": "Yes, both text and image/logo watermarks are supported with full controls."
+          },
+          {
+            "q": "How can I export the results?",
+            "a": "Export a single image or download all watermarked images as a ZIP."
+          },
+          {
+            "q": "Are images uploaded to a server?",
+            "a": "No. Processing happens locally in your browser for better privacy."
+          }
+        ]
+      },
+      "ui": {
+        "upload": "Click or drag to upload images",
+        "dragHere": "Drop images here",
+        "settings": "Watermark Settings",
+        "addText": "Add Text",
+        "addImage": "Add Image",
+        "content": "Content",
+        "opacity": "Opacity",
+        "rotate": "Rotation",
+        "fontSize": "Font Size",
+        "color": "Color",
+        "position": "Position",
+        "export": "Export Image",
+        "exportAll": "Export All",
+        "reset": "Reset",
+        "clear": "Clear",
+        "download": "Download",
+        "x": "X Axis",
+        "y": "Y Axis",
+        "remove": "Remove"
+      }
+    },
     "chrome-icon-generator": {
       "name": "Chrome Icon Generator",
       "desc": "Generate full-size PNG set, dark-mode variants, and toolbar SVG in one click."

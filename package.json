@@ -12,7 +12,7 @@
     "typescript"
   ],
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev  --port=3013",
     "build": "next build",
     "start": "next start --port=3003",
     "type-check": "tsc --noEmit",
